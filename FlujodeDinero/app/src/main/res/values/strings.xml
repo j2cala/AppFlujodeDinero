@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FlujodeDinero</string>
+    <string name="registro">Registro</string>
+    <string name="ingresos">Ingresos</string>
+    <string name="gastos">Gastos</string>
+    <string name="hintTipoIngreso">Libro ejemplo</string>
+    <string name="textview_nombre">Nombre clave:</string>
+    <string name="textview_monto">Monto:</string>
+    <string name="exam_monto">90000</string>
+    <string name="textview_fecha">Fecha:</string>
+    <string name="textview_tipo">Tipo:</string>
+    <string name="btn_atras">Atras</string>
+    <string name="textview_ordenar_por">Ordenar por:</string>
+    <string name="btn_fecha">Fecha</string>
+    <string name="btn_monto">Monto</string>
+    <string name="btn_letra">Letra</string>
+</resources>

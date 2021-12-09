@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:textColor="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_margin="24dp"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/textview_nombre"
+            android:textColor="#FFFFFF"
+            />
+
+        <EditText
+            android:id="@+id/input_nombre"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:hint="@string/hintTipoIngreso"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F47E7E" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="24dp"
+
+        >
+
+        <TextView
+            android:id="@+id/textview_monto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/textview_monto"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+
+            />
+        <EditText
+            android:id="@+id/input_monto"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:inputType="number"
+            android:hint="@string/exam_monto"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F47E7E"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="24dp"
+        >
+
+        <TextView
+            android:id="@+id/textview_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/textview_fecha"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/input_fecha"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:inputType="date"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F47E7E"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="24dp"
+        >
+
+        <TextView
+            android:id="@+id/textview_tipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/textview_tipo"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+        <RadioButton
+            android:id="@+id/radio_ingresos"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:onClick="onRadioButtonClicked"
+            android:shadowColor="@color/white"
+            android:text="@string/ingresos"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radio_gastos"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/gastos"
+            android:textColor="@color/white" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_regis_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+
+
+        />
+    <Button
+        android:id="@+id/reg_btn_atras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_atras"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        android:onClick="onRadioButtonClicked"
+
+
+        />
+
+
+
+</LinearLayout>
