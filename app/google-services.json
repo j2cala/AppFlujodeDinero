@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "250804842876",
+    "project_id": "flujodedinero-4e936",
+    "storage_bucket": "flujodedinero-4e936.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250804842876:android:3194497efd673d811674f9",
+        "android_client_info": {
+          "package_name": "com.example.flujodedinero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250804842876-5dgj5170p9coti7rmjtj31v8v68e8h2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdOoKaLBFCRk0y1h2r1NV4oWAQKdqtcFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250804842876-5dgj5170p9coti7rmjtj31v8v68e8h2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

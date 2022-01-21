@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview_title_ingreso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/ingresos"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textview_ordenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_title_ingreso"
+        android:layout_margin="8dp"
+        android:text="@string/textview_ordenar_por"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title_ingreso"
+
+
+        />
+
+    <Button
+        android:id="@+id/btn_sort_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableStart="@drawable/calendar"
+        android:text="@string/btn_fecha"
+        app:layout_constraintStart_toEndOf="@+id/textview_ordenar"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title_ingreso" />
+
+    <Button
+        android:id="@+id/btn_sort_monto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableStart="@drawable/money"
+        android:text="@string/btn_monto"
+        app:layout_constraintStart_toEndOf="@+id/btn_sort_fecha"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title_ingreso" />
+
+    <Button
+        android:id="@+id/btn_sort_letra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableStart="@drawable/alphabet"
+        android:text="@string/btn_letra"
+        app:layout_constraintStart_toEndOf="@+id/btn_sort_monto"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title_ingreso" />
+
+
+    <ListView
+        android:id="@+id/listview_ingresos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Atras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sort_fecha" />
+
+
+    <Button
+        android:id="@+id/btn_Atras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/red"
+        android:text="@string/btn_atras"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listview_ingresos"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

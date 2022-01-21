@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_nombre"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/cantnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lblnombre"
+        android:text="xxxxx"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblmonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblnombre"
+        android:text="@string/textview_monto"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/cantmonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblnombre"
+        android:layout_toRightOf="@+id/lblmonto"
+        android:text="99999"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblfecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblmonto"
+        android:text="@string/textview_fecha"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/cantfecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblmonto"
+        android:layout_toRightOf="@+id/lblmonto"
+        android:text="1/21/21"
+        android:textSize="24sp" />
+
+</RelativeLayout>
